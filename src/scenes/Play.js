@@ -5,7 +5,7 @@ class Play extends Phaser.Scene{
 
     preload() {
         // Load sprites
-        this.load.image('rocketship','./assets/rocket.png');
+        this.load.image('rocket','./assets/rocket.png');
         this.load.image('spaceship','./assets/enemy.png');
         this.load.image('starfield','./assets/background.png');
         //this.load.image('rocket','/assets/rocketP.png')
@@ -38,7 +38,7 @@ class Play extends Phaser.Scene{
         // Animation config
         this.anims.create({
             key: 'explode',
-            frames: this.anims.generateFrameNumbers('explosion', { start: 0, end: 10, first: 0}),
+            frames: this.anims.generateFrameNumbers('explosion', { start: 0, end: 9, first: 0}),
             frameRate: 30
         });
         // Initialize score
